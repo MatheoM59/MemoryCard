@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+  gap: 10px;
+  text-align: right;
+}
+
+.content p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1em;
+}

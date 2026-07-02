@@ -1,0 +1,5 @@
+Jeu : 
+-5 carte 
+-score de 3
+-cliqué toute les carte sans cliqué deux fois sur la meme 
+ 
