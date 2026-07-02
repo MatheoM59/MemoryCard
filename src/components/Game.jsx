@@ -44,7 +44,7 @@ export const Game = () => {
       <div className={styles.content}>
         <Header score={score} bestScore={bestScore} />
         <CardGrid data={data} onCardClick={handleCardClick} />
-        {score === 5 && (
+        {score === 20 && (
           <div className={styles.win}>
             <Win handleRestart={handleRestart} />
           </div>
