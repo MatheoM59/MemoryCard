@@ -8,13 +8,17 @@
 
 .content h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 700;
+  color: #6b21a8;
+  letter-spacing: -0.5px;
 }
 
 .content h2 {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 0.95em;
   font-weight: 500;
-  opacity: 0.7;
+  color: #8b5cf6;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }

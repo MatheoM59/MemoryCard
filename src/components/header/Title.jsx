@@ -4,7 +4,6 @@ export const Title = () => {
     <>
       <div className={styles.content}>
         <h1>Memory Game</h1>
-        <h2>Rules</h2>
       </div>
     </>
   );

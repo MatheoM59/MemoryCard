@@ -10,5 +10,17 @@
 .content p {
   margin: 0;
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 1em;
+  color: #6b21a8;
+}
+
+.content p:first-child {
+  color: #8b5cf6;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.content p:last-child {
+  color: #7c3aed;
+  font-size: 1.2em;
 }

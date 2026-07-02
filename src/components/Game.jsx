@@ -2,6 +2,7 @@ import { Header } from './header/Header';
 import { CardGrid } from './grid/CardGrid';
 import { useEffect, useState } from 'react';
 import styles from './game.module.css';
+import { Win } from './Win';
 
 export const Game = () => {
   const [score, setScore] = useState(0);
@@ -17,6 +18,7 @@ export const Game = () => {
         setData(data.results);
       });
   }, []);
+
   const handleCardClick = (id) => {
     if (clicked.includes(id)) {
       setScore(0);
@@ -26,14 +28,27 @@ export const Game = () => {
       setClicked([...clicked, id]);
     }
   };
+
   if (score > bestScore) {
     setBestScore(score);
   }
+
+  const handleRestart = () => {
+    setScore(0);
+    setBestScore(0);
+    setClicked([]);
+  };
+
   return (
     <>
       <div className={styles.content}>
         <Header score={score} bestScore={bestScore} />
         <CardGrid data={data} onCardClick={handleCardClick} />
+        {score === 5 && (
+          <div className={styles.win}>
+            <Win handleRestart={handleRestart} />
+          </div>
+        )}
       </div>
     </>
   );

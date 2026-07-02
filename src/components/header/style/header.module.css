@@ -3,9 +3,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 3px solid rgba(170, 59, 255, 0.3);
+  padding: 25px 20px;
   width: 100%;
   gap: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
