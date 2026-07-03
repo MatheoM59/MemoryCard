@@ -6,7 +6,7 @@ import { Win } from './Win';
 
 export const Game = () => {
   const [score, setScore] = useState(0);
-  const [bestScore, setBestScore] = useState(score + 1);
+  const [bestScore, setBestScore] = useState(0);
   const [clicked, setClicked] = useState([]);
   const [data, setData] = useState([]);
 
